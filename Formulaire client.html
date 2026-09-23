@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Inscription Nouveau Client - Méditerranée</title>
+</head>
+<body>
+	<section>
+	<h1>Inscription nouveau client</h1>
+	<table width="70%" >
+
+	<form action=# method="post">
+	<label for="nom">Nom :</label>
+	<input type="texte" id="nom" name="nom">	<!-- Input type text met le formulaire en mode texte-->
+	<br>
+
+	<label for="nom">Prénom :</label>
+	<input type="texte" id="Prénom" name="prénom"><!--
+	La mm chose juste pour les prénoms(br)pour retour a la ligne. label for c'est pour définir la zone de texte-->
+	<br>
+
+    <label for="date_naissance">Date de naissance :</label>
+    <input type="date" id="date_naissance" name="date_naissance">
+    <!-- Pour la date de naissance utilise date-->
+    <br>
+
+     <label for="Mail">Mail :</label>
+    <input type="email" id="Mail" name="mail">
+    <!-- Pour le mail utilise email-->
+    <br>
+
+    <label for="mdp">mot de passe :</label>
+    <input type="password" id="mdp" name="mpd">	
+    <!--pour mot de passe utilise password-->
+    <br>
+
+    <label for="nom">Permis de conduire :</label>
+	<input type="texte" id="Permis" name="Permis">
+	<br>
+	<!--Le permis est juste un text ou la personne va mettre oui ou non ou plus-->
+
+	<label for="anciennetée">Votre anciennetée</label>
+	<input type="number" id="anciennetée" name="anciennetée" min="0" max="80"><!-- Number car c'est un nombre d'année-->
+
+	<br>
+	<label for="ville">Ville :</label>
+	<select id="ville" name="ville">
+	<option value="paris">Paris </option>
+	<option value="versailles">Paris </option>
+	<option value="marseille">Marseille</option>
+	</select>
+	<!--Select c'est pour la liste déroulante et value option c'est pour les options de la liste-->
+
+	<br>
+	<label for="adresse">adresse</label>
+	<textarea id="adresse" name="adresse" rows="4" cols="30"></textarea>
+	<!--textarea c'est une zone de texte rows c'est pour les collones j'imagine ? en cols c'est la grosseur?--> 
+
+	<br>
+	<p>Situation matrimoniale :</p>
+	<label for="marie-oui">Marié</label>
+	<input type="radio"id="marie-oui" name="marie" value="oui">
+	<label for="marie-non">Non marié</label>
+	<input type="radio"id="marie-non" name="marie-non" value="non">
+	<!-- radio c'est les petits bonton ronds a cocher et valuie c'est si c'est oui ou non-->
+
+	<br>
+<p> Préférence de voiture </p>
+<label for="pref_voiture_a">Auto</label>
+<input type="checkbox" id="pref_voiture_a" name="pref_voiture_a" value="automatique">
+<label for="pref_voiture_M">Manu</label>
+<input type="checkbox" id="pref_voiture_M" name="pref_voiture_M" value="manuelle">
+<!-- chekbox c'est les carrées a cocher--> 
+<button type="submit">Enregistrer</button>
+
+<button type="reset">Annuler</button>
+
+
+
+</table>
+	</form>
+	</section>
+<footer>
+	<p>&copy; 2026 Agence Méditerranée -location de véhicules</p>
+</footer>
+</body>
+</html>
